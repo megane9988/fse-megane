@@ -15,6 +15,24 @@ Emptytheme WordPress Theme, (C) 2021 WordPress.org
 Emptytheme is distributed under the terms of the GNU GPL.
 */
 
+@font-face{
+	font-family:"Noto Sans CJK JP";
+	font-style:normal;
+	font-weight:400;src:url("./fonts/NotoSansCJKjp-Regular.eot");
+	src:url("./fonts/NotoSansCJKjp-Regular.eot?#iefix") format("embedded-opentype"),
+	url("./fonts/NotoSansCJKjp-Regular.woff") format("woff"),
+	url("./fonts/NotoSansCJKjp-Regular.otf") format("opentype")
+}
+@font-face{
+	font-family:"Noto Sans CJK JP";
+	font-style:normal;
+	font-weight:700;
+	src:url("./fonts/NotoSansCJKjp-Bold.eot");
+	src:url("./fonts/NotoSansCJKjp-Bold.eot?#iefix") format("embedded-opentype"),
+	url("./fonts/NotoSansCJKjp-Bold.woff") format("woff"),
+	url("./fonts/NotoSansCJKjp-Bold.otf") format("opentype")
+}
+
 /* エントリーコンテンツの最後が回り込みでも他に影響を及ぼさないようにclearfix */
 .wp-block-post-content::after {
 	clear: both;

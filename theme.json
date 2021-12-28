@@ -24,28 +24,39 @@
 		"typography": {
 			"fontFamilies": [
 				{
-					"fontFamily": "\"Noto Sans JP\",sans-serif",
+					"fontFamily": "\"Noto Sans CJK JP\",sans-serif",
 					"slug": "megane-system-font",
 					"name": "Megane System Font"
 				}
 			],
 			"fontSizes": [
 				{
-					"slug": "normal",
-					"size": 16,
-					"name": "Normal"
+					"slug": "megane-min",
+					"size": "14px",
+					"name": "Megane Min"
 				},
 				{
-					"slug": "big",
-					"size": 32,
-					"name": "Big"
+					"slug": "megane-normal",
+					"size": "16px",
+					"name": "Megane Normal"
+				},
+				{
+					"slug": "meagne-big",
+					"size": "32px",
+					"name": "Megane Big"
+				},
+				{
+					"slug": "meagne-super-big",
+					"size": "50px",
+					"name": "Megane Super Big"
 				}
 			]
 		}
 	},
 	"styles": {
 		"typography": {
-			"fontSize": "var(--wp--preset--font-family--megane-system-font)",
+			"fontFamily": "var(--wp--preset--font-family--megane-system-font)",
+			"fontSize": "var(--wp--preset--font-size--megane-normal)",
 			"lineHeight": "var(--wp--custom--line-height--megane-body)"
 		},
 		"elements": {
