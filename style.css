@@ -14,3 +14,9 @@ Text Domain: fse-megane
 Emptytheme WordPress Theme, (C) 2021 WordPress.org
 Emptytheme is distributed under the terms of the GNU GPL.
 */
+
+
+header.wp-block-template-part .wp-block-site-logo.aligncenter{
+	display: block;
+	text-align: center;
+}
