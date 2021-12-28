@@ -3,8 +3,8 @@
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
-			"contentSize": "840px",
-			"wideSize": "1100px"
+			"contentSize": "640px",
+			"wideSize": "800px"
 		},
 		"color": {
 			"palette": [
@@ -17,8 +17,8 @@
 		},
 		"custom": {
 			"line-height": {
-				"megane-body": 1.7,
-				"megane-heading": 1.3
+				"megane-body": 1.5,
+				"megane-heading": 1
 			}
 		},
 		"typography": {
