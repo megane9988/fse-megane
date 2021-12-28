@@ -5,6 +5,55 @@
 		"layout": {
 			"contentSize": "840px",
 			"wideSize": "1100px"
+		},
+		"color": {
+			"palette": [
+				{
+					"name": "megane-Primary",
+					"slug": "megane-primary",
+					"color": "#0073aa"
+				}
+			]
+		},
+		"custom": {
+			"line-height": {
+				"megane-body": 1.7,
+				"megane-heading": 1.3
+			}
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Noto Sans JP\",sans-serif",
+					"slug": "megane-system-font",
+					"name": "Megane System Font"
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "normal",
+					"size": 16,
+					"name": "Normal"
+				},
+				{
+					"slug": "big",
+					"size": 32,
+					"name": "Big"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontSize": "var(--wp--preset--font-family--megane-system-font)",
+			"lineHeight": "var(--wp--custom--line-height--megane-body)"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--megane-primary)"
+				}
+			}
 		}
 	}
 }
