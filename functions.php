@@ -1,7 +1,16 @@
 <?php
+/**
+ * 機能の設定
+ *
+ * @package FES-megane
+ */
 
 if ( ! function_exists( 'fse_megane_support' ) ) :
-	function fse_megane_support()  {
+
+	/**
+	 * ブロックスタイルと管理画面のスタイルの読み込み
+	 */
+	function fse_megane_support() {
 
 		// Adding support for core block visual styles.
 		add_theme_support( 'wp-block-styles' );
@@ -13,7 +22,7 @@ if ( ! function_exists( 'fse_megane_support' ) ) :
 endif;
 
 /**
- * Enqueue scripts and styles.
+ * 独自スタイルの読みこみ
  */
 function fse_megane_scripts() {
 	// Enqueue theme stylesheet.
