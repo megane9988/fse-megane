@@ -21,7 +21,8 @@ Emptytheme is distributed under the terms of the GNU GPL.
 	font-weight:400;src:url("./fonts/NotoSansCJKjp-Regular.eot");
 	src:url("./fonts/NotoSansCJKjp-Regular.eot?#iefix") format("embedded-opentype"),
 	url("./fonts/NotoSansCJKjp-Regular.woff") format("woff"),
-	url("./fonts/NotoSansCJKjp-Regular.otf") format("opentype")
+	url("./fonts/NotoSansCJKjp-Regular.otf") format("opentype");
+	font-display: swap;
 }
 @font-face{
 	font-family:"Noto Sans CJK JP";
@@ -44,4 +45,94 @@ Emptytheme is distributed under the terms of the GNU GPL.
 header.wp-block-template-part .wp-block-site-logo.aligncenter{
 	display: block;
 	text-align: center;
+}
+
+
+/* 初期設定 */
+* {
+    box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.site-logo svg {
+	max-width: 120px;
+	height: auto;
+}
+header.site-header.wp-block-template-part {
+	padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer.site-footer.wp-block-template-part {
+	margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #15202b;
+    color: #fff
+  }
+	.site-logo svg {
+    fill: #fff;
+  }
+	a{
+		color: #92CCFF;
+	}
+}
+
+
+.home header.wp-block-group{
+	display: none;
+}
+
+.wp-block-embed{
+	text-align: center;
+}
+.wp-block-embed iframe{
+	height: auto;
+	width: 100%;
+}
+
+.wp-site-blocks{
+	padding: 20px;
+}
+
+.wp-site-blocks .yoast-breadcrumbs{
+	margin-top: 20px;
+	font-size: var(--wp--preset--font-size--megane-min);
+}
+
+.post-meta {
+  display: flex;
+  justify-content: flex-start;
+	font-size: var(--wp--preset--font-size--megane-min);
+}
+
+.post-meta div {
+	margin-top: 0;
+	margin-right: 10px;
+}
+
+.taxonomy-post_tag a{
+	display: inline-block;
+	background-color: #e9e9e9;
+	padding: 0 5px;
+	border-radius: 3px;
+}
+
+.hljs {
+    font-size: 12px;
 }
