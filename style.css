@@ -50,7 +50,7 @@ header.wp-block-template-part .wp-block-site-logo.aligncenter{
 
 /* 初期設定 */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 a{
@@ -62,8 +62,8 @@ a:hover{
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .site-logo svg {
@@ -72,25 +72,12 @@ img {
 }
 header.site-header.wp-block-template-part {
 	padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 
 footer.site-footer.wp-block-template-part {
 	margin-top: 20px;
-  border-top: 1px solid #ccc;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #15202b;
-    color: #fff
-  }
-	.site-logo svg {
-    fill: #fff;
-  }
-	a{
-		color: #92CCFF;
-	}
+	border-top: 1px solid #ccc;
 }
 
 
@@ -101,6 +88,11 @@ footer.site-footer.wp-block-template-part {
 .wp-block-embed{
 	text-align: center;
 }
+
+iframe {
+	max-width: 100%;
+}
+
 .wp-block-embed iframe{
 	height: auto;
 	width: 100%;
@@ -116,8 +108,8 @@ footer.site-footer.wp-block-template-part {
 }
 
 .post-meta {
-  display: flex;
-  justify-content: flex-start;
+	display: flex;
+	justify-content: flex-start;
 	font-size: var(--wp--preset--font-size--megane-min);
 }
 
@@ -134,5 +126,50 @@ footer.site-footer.wp-block-template-part {
 }
 
 .hljs {
-    font-size: 12px;
+	font-size: 12px;
+}
+
+header.site-header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	padding: 10px;
+}
+
+header.site-header.wp-block-template-part + .wp-block-group,
+header.site-header.wp-block-template-part + .wp-block-query{
+	padding-top: 20px;
+}
+
+@media (min-width: 600px){
+	header.site-header.wp-block-template-part + .wp-block-group,
+		header.site-header.wp-block-template-part + .wp-block-query{
+		padding-top: 40px;
+	}
+}
+
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #15202b;
+		color: #fff
+	}
+	header.site-header{
+		background-color: #061320;
+	}
+		.site-logo svg {
+		fill: #fff;
+	}
+	body a{
+		color: #92CCFF;
+	}
+	.taxonomy-post_tag a{
+		background-color: #001731;
+	}
+	svg {
+		fill: #92CCFF;
+	}
+	
 }
